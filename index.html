@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Survey form</title>
+</head>
+
+<body>
+    <section class="form">
+  <h1>*Survey form*</h1>
+  <div class="form-center">
+ <form>
+ <h2>Let us know how we can improve freeCodeCamp.</h2>
+ <div class="form-data">
+ <div>
+ <label>*Name:</label>
+ <input required type="text" name="name" placeholder="Enter your name" />
+ </div>
+
+ <div>
+<label for="email">*Email:</label>
+ <input required type="email" name="email" placeholder="Enter your email" />
+ </div>
+
+ <div>
+ <label for="age">*Age:</label>
+ <input required type="number" name="age" placeholder="Age">
+</div>
+ </div>
+ <div class="form-option">
+ <label>*Which option best describes your current role?</label>
+<select name="student">
+<option value="student">*Student</option>
+<option value="teacher">*Teacher</option>
+ <option value="other">*Other</option>
+  </select>
+    </div>
+     <div class="form-likelihood">
+    <label>*How likely is that you would recommend<br>freeCodeCamp to a friend?</label>
+    <div class="likelihood-options">
+        <label>
+          <input type="radio" name="likelihood" value="definitely">Definitely
+           </label>
+           <label>
+           <input type="radio" name="likelihood" value="maybe">  Maybe
+          </label>
+          <label>
+          <input type="radio" name="likelihood" value="not_sure">Not Sure            
+     </label>
+           </div>
+            </div>
+
+               <div class="form-like">
+                    <label>*What do you like in FCC?:</label>
+                    <select name="option">
+           <option value="option">Select an option</option>
+           <option value="teacher">Teacher</option>
+         <option value="classmates">Classmates</option>
+          <option value="other">Other</option>
+        </select>
+          </div>
+
+      <div class="form-improvements">
+      <label>Things that should be improved in the future (select all applicable options)</label>
+      <div class="improvement-options">
+     <label for="frontend"><input type="checkbox" /> Front-end projects</label>
+     <label for="backend"><input type="checkbox" /> Back-end projects</label>
+      <label for="data"><input type="checkbox" /> Data Visualization</label>
+      </div>
+      </div>
+
+      <div class="form-submit">
+    <input type="submit" value="Submit" />
+      </div>
+     </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
